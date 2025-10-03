@@ -1,0 +1,10 @@
+{
+  "name": "ellise-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node tools/generate-images.js"
+  },
+  "dependencies": {}
+}
+

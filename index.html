@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ellise · Ropa deportiva para todos</title>
+    <meta name="description" content="Ellise: ropa deportiva inclusiva para todos los géneros. Diseños cómodos, funcionales y con colores suaves.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#e9f0ef">
+</head>
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="#" aria-label="Ellise inicio">Ellise</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="sr-only">Abrir menú</span>
+                ☰
+            </button>
+            <nav id="primary-nav" class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#colecciones">Colecciones</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="btn cart-button" aria-controls="cart-drawer" aria-expanded="false">Carrito (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1 id="hero-title">Ropa deportiva para todos</h1>
+                    <p>Prendas inclusivas con telas suaves, respirables y flexibles. Diseños neutros y colores calmados que se adaptan a tu movimiento.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#colecciones">Ver colecciones</a>
+                        <a class="btn" href="#novedades">Novedades</a>
+                    </div>
+                </div>
+                <div class="hero-media" aria-hidden="true">
+                    <div class="hero-card t1"><img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                    <div class="hero-card t2"><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                    <div class="hero-card t3"><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="novedades" class="section" aria-labelledby="novedades-title">
+            <div class="container">
+                <h2 id="novedades-title">Novedades</h2>
+                <div class="grid products" role="list">
+                    <article class="product" role="listitem">
+                        <div class="product-media ph1" aria-hidden="true">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/top-respirable.jpg" alt="Top deportivo en color suave" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Top Respirable</h3>
+                        <p>Tela liviana y soporte medio. Colores: bruma, salvia, arena.</p>
+                        <button class="btn small">Agregar</button>
+                    </article>
+                    <article class="product" role="listitem">
+                        <div class="product-media ph2" aria-hidden="true">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/jogger-elastico.jpg" alt="Jogger deportivo elástico" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Jogger Elástico</h3>
+                        <p>Cintura elástica y bolsillos ocultos. Colores: nube, pizarra.</p>
+                        <button class="btn small">Agregar</button>
+                    </article>
+                    <article class="product" role="listitem">
+                        <div class="product-media ph3" aria-hidden="true">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/chaqueta-ligera.jpg" alt="Chaqueta deportiva ligera" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Chaqueta Ligera</h3>
+                        <p>Rompeviento compacto con capucha. Colores: perla, humo.</p>
+                        <button class="btn small">Agregar</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="tienda" class="section alt" aria-labelledby="tienda-title">
+            <div class="container">
+                <div class="shop-header">
+                    <h2 id="tienda-title">Tienda</h2>
+                    <button class="btn sidebar-toggle" aria-controls="shop-sidebar" aria-expanded="false">Categorías</button>
+                </div>
+                <div class="shop-layout">
+                    <aside id="shop-sidebar" class="shop-sidebar" aria-label="Categorías de ropa deportiva">
+                        <nav>
+                            <ul class="category-list">
+                                <li><a href="#" class="active" id="tienda-cat-todo">Todo</a></li>
+                                <li><a href="#" id="tienda-cat-tops">Tops</a></li>
+                                <li><a href="#" id="tienda-cat-leggings">Leggings</a></li>
+                                <li><a href="#" id="tienda-cat-shorts">Shorts</a></li>
+                                <li><a href="#" id="tienda-cat-joggers">Joggers</a></li>
+                                <li><a href="#" id="tienda-cat-chaquetas">Chaquetas</a></li>
+                                <li><a href="#" id="tienda-cat-accesorios">Accesorios</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <div class="shop-content">
+                        <div class="grid products" role="list" aria-label="Catálogo">
+                            <article class="product" role="listitem">
+                                <div class="product-media ph2" aria-hidden="true">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/legging-fluido.jpg" alt="Legging deportivo fluido" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                                </div>
+                                <h3>Legging Fluido</h3>
+                                <p>Compresión suave y costuras planas.</p>
+                                <div class="price-row"><span class="price">$39.990</span> <button class="btn small add-to-cart" data-id="legging-fluido" data-name="Legging Fluido" data-price="39990" data-img="products/legging-fluido.jpg">Agregar</button></div>
+                            </article>
+                            <article class="product" role="listitem">
+                                <div class="product-media ph1" aria-hidden="true">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/top-soporte.jpg" alt="Top deportivo de soporte" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                                </div>
+                                <h3>Top Suporte</h3>
+                                <p>Soporte medio y secado rápido.</p>
+                                <div class="price-row"><span class="price">$24.990</span> <button class="btn small add-to-cart" data-id="top-soporte" data-name="Top Suporte" data-price="24990" data-img="products/top-soporte.jpg">Agregar</button></div>
+                            </article>
+                            <article class="product" role="listitem">
+                                <div class="product-media ph3" aria-hidden="true">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/short-ligero.jpg" alt="Short deportivo ligero" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                                </div>
+                                <h3>Short Ligero</h3>
+                                <p>Movimiento libre y bolsillos internos.</p>
+                                <div class="price-row"><span class="price">$19.990</span> <button class="btn small add-to-cart" data-id="short-ligero" data-name="Short Ligero" data-price="19990" data-img="products/short-ligero.jpg">Agregar</button></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="section" aria-labelledby="ofertas-title">
+            <div class="container">
+                <h2 id="ofertas-title">Ofertas</h2>
+                <div class="grid products" role="list" aria-label="Productos en oferta">
+                    <article class="product" role="listitem">
+                        <div class="product-media ph3" aria-hidden="true"><span class="badge">-30%</span>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/chaqueta-ligera-oferta.jpg" alt="Chaqueta deportiva en oferta" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Chaqueta Ligera</h3>
+                        <p class="old-price">$49.990</p>
+                        <div class="price-row"><span class="price highlight">$34.990</span> <button class="btn small add-to-cart" data-id="chaqueta-ligera" data-name="Chaqueta Ligera" data-price="34990" data-img="products/chaqueta-ligera-oferta.jpg">Agregar</button></div>
+                    </article>
+                    <article class="product" role="listitem">
+                        <div class="product-media ph2" aria-hidden="true"><span class="badge">-20%</span>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/jogger-elastico-oferta.jpg" alt="Jogger en oferta" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Jogger Elástico</h3>
+                        <p class="old-price">$39.990</p>
+                        <div class="price-row"><span class="price highlight">$31.990</span> <button class="btn small add-to-cart" data-id="jogger-elastico" data-name="Jogger Elástico" data-price="31990" data-img="products/jogger-elastico-oferta.jpg">Agregar</button></div>
+                    </article>
+                    <article class="product" role="listitem">
+                        <div class="product-media ph1" aria-hidden="true"><span class="badge">-25%</span>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-cdn="products/top-respirable-oferta.jpg" alt="Top deportivo en oferta" loading="lazy" sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 33vw">
+                        </div>
+                        <h3>Top Respirable</h3>
+                        <p class="old-price">$24.990</p>
+                        <div class="price-row"><span class="price highlight">$18.740</span> <button class="btn small add-to-cart" data-id="top-respirable" data-name="Top Respirable" data-price="18740" data-img="products/top-respirable-oferta.jpg">Agregar</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="colecciones" class="section alt" aria-labelledby="colecciones-title">
+            <div class="container">
+                <h2 id="colecciones-title">Colecciones</h2>
+                <div class="collections">
+                    <div class="collection-card c1" style="background-image:url('https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=1200&auto=format&fit=crop')">
+                        <div class="copy">
+                            <h3>Movimiento Suave</h3>
+                            <p>Te acompaña en yoga, pilates y estiramientos.</p>
+                        </div>
+                    </div>
+                    <div class="collection-card c2" style="background-image:url('https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=1200&auto=format&fit=crop')">
+                        <div class="copy">
+                            <h3>Ritmo Activo</h3>
+                            <p>Ligereza para correr y entrenar al aire libre.</p>
+                        </div>
+                    </div>
+                    <div class="collection-card c3" style="background-image:url('https://images.unsplash.com/photo-1520977451277-7e17a1d04c7f?q=80&w=1200&auto=format&fit=crop')">
+                        <div class="copy">
+                            <h3>Fuerza Urbana</h3>
+                            <p>Estilo funcional para el día a día.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destacados" class="section" aria-labelledby="destacados-title">
+            <div class="container">
+                <h2 id="destacados-title">Destacados</h2>
+                <div class="carousel" aria-roledescription="carrusel" aria-label="Productos destacados">
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <div class="carousel-track">
+                        <div class="slide s1">
+                            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1200&auto=format&fit=crop" alt="Tops deportivos en oferta" loading="lazy">
+                            <div class="slide-caption"><a href="#tienda-cat-tops" aria-label="Ver Tops en oferta">
+                                <strong>Tops</strong>
+                                <span class="offer">Hasta -25%</span>
+                            </a></div>
+                        </div>
+                        <div class="slide s2">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop" alt="Joggers deportivos en oferta" loading="lazy">
+                            <div class="slide-caption"><a href="#tienda-cat-joggers" aria-label="Ver Joggers en oferta">
+                                <strong>Joggers</strong>
+                                <span class="offer">Desde $31.990</span>
+                            </a></div>
+                        </div>
+                        <div class="slide s3">
+                            <img src="https://images.unsplash.com/photo-1544971585-8304e4bb54e2?q=80&w=1200&auto=format&fit=crop" alt="Chaquetas deportivas en oferta" loading="lazy">
+                            <div class="slide-caption"><a href="#ofertas" aria-label="Ver ofertas de Chaquetas">
+                                <strong>Chaquetas</strong>
+                                <span class="offer">-30% esta semana</span>
+                            </a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas" class="section alt" aria-labelledby="resenas-title">
+            <div class="container">
+                <h2 id="resenas-title">Reseñas</h2>
+                <div class="testimonials" role="list" aria-label="Opiniones de clientes">
+                    <article class="review" role="listitem">
+                        <div class="review-head">
+                            <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Avatar de Alex" loading="lazy">
+                            <div>
+                                <strong>Alex</strong>
+                                <div class="stars" aria-label="5 de 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>Tejidos suaves y cortes inclusivos. Perfecto para yoga y entrenamientos ligeros.</p>
+                    </article>
+                    <article class="review" role="listitem">
+                        <div class="review-head">
+                            <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Avatar de Sam" loading="lazy">
+                            <div>
+                                <strong>Sam</strong>
+                                <div class="stars" aria-label="5 de 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>Las prendas respiran muy bien y los colores son calmados. Llegó rapidísimo.</p>
+                    </article>
+                    <article class="review" role="listitem">
+                        <div class="review-head">
+                            <img class="avatar" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&auto=format&fit=crop" alt="Avatar de Dani" loading="lazy">
+                            <div>
+                                <strong>Dani</strong>
+                                <div class="stars" aria-label="4 de 5">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>Buena relación calidad-precio. El jogger elástico es mi favorito para el día a día.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section alt" aria-labelledby="contacto-title">
+            <div class="container">
+                <h2 id="contacto-title">Contacto</h2>
+                <form class="contact-form" netlify>
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label class="full">
+                        <span>Mensaje</span>
+                        <textarea name="mensaje" rows="4" required></textarea>
+                    </label>
+                    <button class="btn primary" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ellise — Hecho con calma.</p>
+            <nav class="footer-nav" aria-label="Secundaria">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#contacto">Soporte</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay" hidden></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Carrito de compras" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Tu carrito</h3>
+            <button class="btn small cart-close" aria-label="Cerrar">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items" role="list"></div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <strong id="cart-total">$0</strong></div>
+            <button class="btn primary" disabled id="checkout-btn">Finalizar compra</button>
+            <button class="btn" id="clear-cart-btn">Vaciar</button>
+        </div>
+    </aside>
+
+    <!-- CDN local desactivado para permitir fallback de imágenes -->
+    <script src="script.js"></script>
+</body>
+</html>
+
